@@ -17,9 +17,9 @@
     1，streamlit前端页面设计
     2，使用加载组件显示生成状态
 '''
-from langchain.prompts import ChatPromptTemplate
 from langchain_community.chat_models import ChatTongyi
 import os
+from langchain.prompts import ChatPromptTemplate
 #from langchain_community.utilities import WikipediaAPIWrapper
 
 def generate_script(subject,duration,temperature,api_key):
@@ -54,4 +54,5 @@ def generate_script(subject,duration,temperature,api_key):
     return title,script
 
 # response =  generate_script("2023年中国经济形势",10,0.5)
+
 # print(response)
